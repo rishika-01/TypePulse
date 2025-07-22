@@ -1,0 +1,159 @@
+*{
+padding : 0;
+margin : 0;
+box-sizing : border-box;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: darkcyan;
+    place-items: center;
+    display: grid;
+}
+.box{
+    width: 70%;
+    height: auto;
+    background-color: white;
+    padding: 20px;
+}
+.box .top_part{
+    width: 100%;
+    position: relative;
+}
+.top_part .title_part{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title_part h2{
+    font-size: 1.4rem;
+    font-family: "Designer", sans-serif;
+    opacity: .6;
+}
+
+hr{
+    margin: 20px 0;
+}
+
+.title_part .sound{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.title_part .sound span{
+    margin-right: 10px;
+    font-family: "Montserrat SemiBold", sans-serif;
+}
+
+input[type = "checkbox"]{
+    width: 60px;
+    height: 30px;
+    appearance: none;
+    background-color: black;
+    border-radius: 40px;
+    position: relative;
+    cursor: pointer;
+    border: 0px solid black;
+    transition-duration: 300ms;
+}
+
+input[type = "checkbox"]::before{
+    position: absolute;
+    content: '';
+    width: 30px;
+    top: 0;
+    height: 30px;
+    left: 0;
+    border-radius: 50%;
+    background-color: white;
+    transition-duration: 300ms;
+    box-shadow: 0 0 5px black;
+}
+
+input[type = "checkbox"]:checked{
+    background-color: darkcyan;
+}
+
+input[type = "checkbox"]:checked::before{
+    left: 30px;
+}
+
+.type_content input{
+    position: absolute;
+    z-index: -999;
+    opacity: 0;
+    /*top: 20px;*/
+}
+.type_content p{
+    font-size: 1.4rem;
+    opacity: 0.6;
+    font-family: "Bakemono Stereo Trial ExtraLight", sans-serif;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    text-align: justify;
+    line-height: 1.2;
+}
+
+.bottom_part{
+    width: 100%;
+    font-family: "Montserrat", sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    padding: 25px;
+    box-shadow: 0 0 7px black;
+}
+
+.bottom_part p{
+    font-size: 1.1rem;
+}
+
+.bottom_part button{
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: darkcyan;
+    color: white;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    transition-duration: 200ms;
+}
+
+.bottom_part button:hover{
+    transform: scale(1.1);
+}
+
+::selection{
+    background-color: orange;
+    color: white;
+}
+
+.correct{
+    color: green;
+}
+.incorrect{
+    color: red;
+}
+.active{
+    opacity: 0.6;
+    position: relative;
+}
+.active::before{
+    position: absolute;
+    content: '';
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background-color: red;
+    animation: blink .5s linear infinite;
+}
+
+@keyframes blink{
+    50%{
+        opacity: 1;
+    }
+}
