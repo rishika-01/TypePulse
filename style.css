@@ -52,11 +52,11 @@ input[type = "checkbox"]{
     width: 60px;
     height: 30px;
     appearance: none;
-    background-color: black;
+    background-color: darkcyan;
     border-radius: 40px;
     position: relative;
     cursor: pointer;
-    border: 0px solid black;
+    border: 0px solid darkcyan;
     transition-duration: 300ms;
 }
 
@@ -74,7 +74,7 @@ input[type = "checkbox"]::before{
 }
 
 input[type = "checkbox"]:checked{
-    background-color: darkcyan;
+    background-color: black;
 }
 
 input[type = "checkbox"]:checked::before{
