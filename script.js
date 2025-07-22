@@ -12,7 +12,7 @@ let t_left = document.querySelector('.t-left');
 let error = document.querySelector('.error');
 let wpm = document.querySelector('.wpm');
 let cpm = document.querySelector('.cpm');
-let maxTime = 60;
+let maxTime = 200;
 let timeleft = maxTime;
 
 let correctType=new Audio('type.mp3');
