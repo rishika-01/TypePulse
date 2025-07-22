@@ -90,7 +90,7 @@ input[type = "checkbox"]:checked::before{
 .type_content p{
     font-size: 1.4rem;
     opacity: 0.6;
-    font-family: "Bakemono Stereo Trial ExtraLight", sans-serif;
+    font-family: "Consolas", sans-serif;
     letter-spacing: 2px;
     word-spacing: 2px;
     text-align: justify;
