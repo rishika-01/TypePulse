@@ -59,7 +59,7 @@ const loadPara = () => {
 loadPara();
 
 
-/*input.addEventListener('input', (e)=>{
+input.addEventListener('input', (e)=>{
     let char = type_content.querySelectorAll('span');
     let inputValue = e.target.value.split('')[letterIndex];
     
@@ -105,8 +105,8 @@ loadPara();
     clearInterval(time);
     input.value = "";
 }
-});*/
-
+});
+/*
 input.addEventListener('input', (e) => {
     let char = type_content.querySelectorAll('span');
     let inputValue = e.target.value.split('');
@@ -154,7 +154,7 @@ input.addEventListener('input', (e) => {
         clearInterval(time);
         input.value = "";
     }
-});
+});*/
 
 
 input.addEventListener('keydown', (e) => {
